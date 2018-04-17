@@ -172,3 +172,5 @@ update the following line in `matrix.c` to the following:
 // _delay_us(30);  // without this wait read unstable value.
 _delay_us(300);  // without this wait read unstable value.
 ```
+make 
+sudo avrdude -p atmega32u4 -b 57600 -P /dev/ttyACM0 -c avr109 -U flash:w:../../dactyl-manuform_5x6-colemak.hex
