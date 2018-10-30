@@ -19,18 +19,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = KEYMAP_5x6(
   // left hand
    KC_ESC,    KC_1,    KC_2,    KC_3,   KC_4,   KC_5, 
-   KC_TAB,    KC_Q,    KC_W,    KC_F,   KC_P,   KC_G,
-   KC_BSPC,   KC_A,    KC_R,    KC_S,   KC_T,   KC_D,
-   KC_LSHIFT, KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
-   KC_DOWN,   KC_UP, KC_BSPC, KC_LSFT,MO(_FN),    KC_LCTRL,
-                                        KC_LGUI, KC_LALT,
+   KC_GRV,    KC_Q,    KC_W,    KC_F,   KC_P,   KC_G,
+   KC_TAB,    KC_A,    KC_R,    KC_S,   KC_T,   KC_D,
+   KC_BSLS,   KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,
+   KC_DOWN,   KC_UP, KC_BSPC, KC_LSFT,LT(_FN, KC_DEL),    KC_LALT,
+                                        GUI_T(KC_F8), KC_LCTRL,
         // right hand
                      KC_6,    KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS,
                      KC_J,    KC_L,   KC_U,    KC_Y,    KC_SCLN, KC_EQL,
                      KC_H,    KC_N,   KC_E,    KC_I,    KC_O,    KC_QUOT, 
                      KC_K,    KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSHIFT,
-                     KC_RCTRL,MO(_FN),KC_ENTER,KC_SPC,  KC_LEFT, KC_RIGHT,
-                     KC_RALT, KC_RGUI),
+                     KC_RALT,LT(_FN, KC_DEL),KC_ENTER,KC_SPC,  KC_LEFT, KC_RIGHT,
+                     KC_RCTRL, KC_RGUI),
 
 [_FN] = KEYMAP_5x6(
   // left hand
@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    _______,  KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,   _______,
    _______,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT, KC_LBRC,
    RESET,    _______,  _______,  _______,  _______,  _______,
-   KC_DOWN,   KC_UP, KC_BSPC, KC_LSFT,MO(_FN),    KC_LCTRL,
-                                        KC_LGUI, KC_LALT,
+   _______,  _______,  _______,  _______,  _______,  _______,
+                                           _______,  _______, 
 
 
    // right hand
@@ -47,8 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                      _______,  KC_HOME,  KC_PGDN,  KC_PGUP,   KC_END,  KC_F12,
                      KC_RBRC,  KC_LEFT,  KC_DOWN,  KC_UP,     KC_RIGHT, _______,
                      _______,  _______,  _______,  _______,   _______,   RESET,
-                     KC_RCTRL,MO(_FN),KC_ENTER,KC_SPC,  KC_LEFT, KC_RIGHT,
-                     KC_RALT, KC_RGUI),
+                     _______,  _______,  _______,  _______,  _______,  _______,
+                     _______,  _______),
 
    };
 
