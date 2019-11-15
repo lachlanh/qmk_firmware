@@ -174,3 +174,5 @@ _delay_us(300);  // without this wait read unstable value.
 ```
 make 
 sudo avrdude -p atmega32u4 -b 57600 -P /dev/ttyACM0 -c avr109 -U flash:w:../../dactyl-manuform_5x6-colemak.hex
+
+If the above is failing, try to lower the baud rate.. was successful with 28800.
