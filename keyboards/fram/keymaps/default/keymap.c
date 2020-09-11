@@ -6,8 +6,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	    KEYMAP(ESC, 1,   2,   3,   4,   5,        6,   7,   8,   9,   0,   MINS,  \
 		   GRV, Q,   W,   F,   P,   G,        J,   L,   U,   Y,   SCLN,EQL, \
 		   LT(1, KC_TAB),A,   R,   LALT_T(KC_S),   LCTL_T(KC_T),   D,   LSFT,H,   RCTL_T(KC_N),   RALT_T(KC_E),   I,   O,   LT(1, KC_QUOT), \
-		   LSFT,Z,   X,   C,   V,   B,   LGUI,K,   M, COMM,  DOT, SLSH,LBRC,  \
-		   LCTL,LALT,FN0, MINS,EQL, BSPC,ENT, SPC, LEFT,DOWN,UP,  RGHT,RBRC ),
+		   LSFT,Z,   X,   C,   V,   B,   LGUI,K,   M, COMM,  DOT, SLSH,RSFT,  \
+		   FN0,DEL,F6,F7,F8, BSPC,ENT, SPC, LEFT,DOWN,UP,  RGHT,BSLS ),
 /* 1: numbers */
 	    KEYMAP(DEL, F1,  F2,  F3,  F4,  F5,       F6,  F7,  F8,  F9,  F10, F11,  \
                    TRNS,TRNS,TRNS,TRNS,TRNS,LPRN,     RPRN,TRNS,TRNS,TRNS,TRNS, F12, \
