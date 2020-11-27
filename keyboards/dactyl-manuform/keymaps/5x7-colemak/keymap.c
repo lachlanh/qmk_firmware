@@ -53,8 +53,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    /*                                      KC_LGUI, KC_LALT, */
               KC_F5,   KC_F4,   KC_F3,   KC_F2,  KC_F1,  _______, 
               KC_LPRN, _______, _______, _______,_______,_______,
-   _______,   KC_LBRC, _______, _______, _______,_______,_______,
-   _______,   KC_LCBR, _______, _______, _______,_______,_______,
+   _______,   KC_LBRC, KC_VOLU, KC_VOLD, KC_MUTE,KC_MPLY,_______,
+   _______,   KC_LCBR, KC_MNXT, KC_MPRV, _______,_______,_______,
    MO(_FN),   _______, _______, _______, _______,_______,_______, 
 
 
